@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".halamankategori.Category">
+
+
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@drawable/orangetopkategori"
+            android:paddingTop="30dp"
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:drawableLeft="@drawable/ic_twotone_chevron_left_24"
+
+            />
+        </RelativeLayout>
+
+        <ListView
+
+            android:layout_below="@id/judul"
+            android:listSelector="@drawable/bkg"
+            android:id="@+id/parentkategori"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:background="#f7d18f"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_parentkategori"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:divider="@null"
+
+            android:id="@+id/grid"
+            android:layout_below="@id/judul"
+            android:layout_toRightOf="@id/parentkategori"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:numColumns="4"
+            tools:listitem="@layout/item_parentkategori"
+            android:scrollbarStyle="outsideOverlay"
+            android:verticalScrollbarPosition="right"
+            android:scrollbars="none">
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cart.Cart">
+    <RelativeLayout
+
+        android:layout_above="@+id/card_view"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/atasan"
+            android:background="@drawable/orangetopkategori"
+            android:paddingTop="30dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_twotone_chevron_left_24"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:text="Keranjang"/>
+
+
+
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/atasan">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:divider="@null"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rvcart"
+            android:layout_marginBottom="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:focusable="false"
+        android:elevation="10dp"
+        android:layout_alignParentBottom="true"
+        android:focusableInTouchMode="false"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/tvharga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            />
+
+        <Button
+            android:id="@+id/pesanbt"
+            android:background="@color/orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pesan"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+
+
+            />
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

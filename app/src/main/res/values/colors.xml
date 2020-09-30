@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f49922</color>
+    <color name="orange">#f49922</color>
+    <color name="colorAccent">#f49922</color>
+    <color name="transparent">#50000000</color>
+    <color name="biru">#4c88cc</color>
+
+<!--    <color name="transparen20">#33</color>-->
+<!--    <color name="transparen50">#80</color>-->
+<!--    <color name="transparen75">#BF</color>-->
+<!--    <color name="transparen100">#FFf</color>-->
+
+</resources>

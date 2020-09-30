@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginBottom="6dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:buttonTint="@color/orange"
+                android:checked="false"
+                android:textColor="@color/orange"
+                android:id="@+id/checkbox"
+                android:focusable="false"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="40dp"
+                />
+            <ImageView
+                android:layout_toRightOf="@id/checkbox"
+                android:id="@+id/ivprodukcart"
+                android:layout_width="100dp"
+                android:scaleType="fitCenter"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_margin="10dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:id="@+id/judulwrap"
+                android:layout_toRightOf="@id/ivprodukcart"
+                android:padding="11dp"
+                android:layout_marginTop="5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvnamaproduk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+
+                    android:maxLines="1"
+                    android:textSize="16sp"
+                    android:fontFamily="casual"
+                    tools:text="Nama produk"/>
+
+
+
+                <TextView
+                    android:id="@+id/tvhargaproduk"
+                    android:layout_marginTop="6dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif-light"
+                    tools:text="Harga"/>
+            </LinearLayout>
+
+          <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                android:id="@+id/qvbutton"
+              
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/judulwrap"
+              android:layout_toRightOf="@id/ivprodukcart"
+
+              />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/garis"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/qvbutton"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray"
+                >
+
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_below="@+id/garis"
+                android:id="@+id/hargatotal"
+                android:layout_marginTop="6dp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                tools:text="SUB TOTAL : "/>
+
+<!--        <LinearLayout-->
+<!--            android:padding="1dp"-->
+<!--            android:background="@color/orange"-->
+<!--            android:layout_below="@id/judulwrap"-->
+<!--            android:layout_toRightOf="@id/ivprodukcart"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <Button-->
+<!--                android:id="@+id/btaddnumber"-->
+<!--                android:gravity="center"-->
+<!--                android:focusable="false"-->
+<!--                android:focusableInTouchMode="false"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:background="@android:color/white"-->
+<!--                android:text="+"-->
+<!--                android:layout_height="20dp"/>-->
+<!--            <EditText-->
+<!--                android:id="@+id/etnumberqty"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="15dp"-->
+<!--                android:focusable="false"-->
+<!--                android:focusableInTouchMode="false"-->
+<!--                android:text="1"-->
+<!--                android:background="@android:color/white"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                />-->
+<!--            <Button-->
+<!--                android:id="@+id/btminnumber"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:focusable="false"-->
+<!--                android:focusableInTouchMode="false"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:background="@android:color/white"-->
+<!--                android:text="-"-->
+<!--                android:layout_height="20dp"/>-->
+
+
+<!--        </LinearLayout>-->
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
